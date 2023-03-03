@@ -31,7 +31,7 @@ jobs:
       env:
           INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
       with:
-          text: A successful scrape from Iris but nothing new!
+          text: A successful scrape from ChatGPT but nothing new!
           
     - name: Slack Notification on FAILURE
       if: failure()
